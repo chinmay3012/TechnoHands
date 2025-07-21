@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+body {
+    font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
+}
+/* Custom scrollbar for better aesthetics */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Active navigation link styling */
+.nav-link.active {
+    @apply text-teal-400 border-b-2 border-teal-400;
+}
+
+/* Simple fade-in effect for sections */
+.section {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+.section.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+}
+.section.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+/* Smooth scrolling for links */
+.section.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Spinner animation */
+.spinner {
+    border: 4px solid rgba(255, 255, 255, 0.3);
+    border-top: 4px solid #3498db;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+

@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Techno Hands - Precision Manufacturing</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Inter Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Stardos+Stencil:wght@700&display=swap" rel="stylesheet">
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header & Navigation -->
+    <header class="bg-amber-50 text-black shadow-lg fixed w-full z-50">
+
+
+        <nav class="container mx-auto px-6 py-2 flex items-center justify-between">
+            <div class="flex items-center" >
+                <!-- Placeholder for Logo -->
+                <img src="img/logo.png"alt="Techno Hands Logo" class="h-20 w-20 rounded-full mr-3">
+                <a href="#home" class="text-lg md:text-2xl font-extrabold text-black hover:text-teal-400 transition duration-300" style="font-family: 'Stardos Stencil', sans-serif;">
+                    TECHNO HANDS
+                  </a>
+                                   
+                  
+            </div>
+            <div class="hidden md:block space-x-8">
+                <a href="#about" class="nav-link text-lg hover:text-teal-400 transition duration-300" data-section="about">About Us</a>
+                <a href="#services" class="nav-link text-lg hover:text-teal-400 transition duration-300" data-section="services">Services</a>
+                <a href="#products" class="nav-link text-lg hover:text-teal-400 transition duration-300" data-section="products">Products & Projects</a>
+                <a href="#clients" class="nav-link text-lg hover:text-teal-400 transition duration-300" data-section="clients">Clients</a>
+                <a href="#contact" class="nav-link text-lg hover:text-teal-400 transition duration-300" data-section="contact">Contact Us</a>
+            </div>
+            
+            <div class="md:hidden">
+                <button id="menu-button" class="text-black focus:outline-none">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-800 py-2">
+            <a href="#about" class="block px-6 py-2 text-white hover:bg-gray-700 nav-link" data-section="about">About Us</a>
+            <a href="#services" class="block px-6 py-2 text-white hover:bg-gray-700 nav-link" data-section="services">Services</a>
+            <a href="#products" class="block px-6 py-2 text-white hover:bg-gray-700 nav-link" data-section="products">Products & Projects</a>
+            <a href="#clients" class="block px-6 py-2 text-white hover:bg-gray-700 nav-link" data-section="clients">Clients</a>
+            <a href="#contact" class="block px-6 py-2 text-white hover:bg-gray-700 nav-link" data-section="contact">Contact Us</a>
+            <div class="py-3 bg-teal-400 w-max rounded-full text-white font-extrabold p-0.5 mx-auto">
+                <a href="form.html" target="_blank"><button class="p-1 px-10">
+                    Request Callback
+                </button>
+            </div></a>
+        </div>
+    </header>
+
+    <main class="pt-20"> <!-- Padding to account for fixed header -->
+
+        <!-- Home Section -->
+        <!-- <section id="home" class="hidden md:block section fade-in active min-h-screen flex items-center justify-center bg-gradient-to-l from-sky-950 to-gray-800 text-white py-16 px-4">
+            <div class="container mx-auto text-center">
+                <img src="img/logo.png" alt="Techno Hands Logo" class="w-40 h-40 mx-auto mb-8 rounded-full shadow-lg">
+                <h1 class="text-5xl md:text-6xl font-extrabold mb-4 leading-tight">TECHNO HANDS</h1>
+                <p class="text-lg md:text-xl max-w-3xl mx-auto mb-10 text-yellow-200">
+                    Specialized in: Sector of Defence Services, Heavy Engineering Machinery Works, Cement Plant & Spare Parts.
+                </p>
+                <a href="#about" class="bg-teal-500 hover:bg-teal-600 text-white font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 transform hover:scale-105">Learn More</a>
+            </div>
+        </section> -->
+
+        <!-- About Us Section -->
+        <div id="home">
+            <video autoplay muted loop playsinline preload="auto" class="px-0 w-full h-full object-cover">
+                <source src="img/videoCom.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+        </div>
+        <section id="about" class="section fade-in py-3 px-5 bg-gray-100">
+
+            <div class="container mx-auto" >
+                <h2 class="text-xl md:text-3xl font-bold text-center mb-4 mt-6 text-gray-900">Empowering Engineering Solutions</h2>
+                <p class="text-xl md:text-xl font-light italic mb-8" style="border-left: 5px solid #14dcbb;
+                margin: 25px 32px 25px 30px;
+                background-color: #6a595998;
+                padding: 10px;">"The Perfection In Right Hands"</p>
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div class="text-sm md:text-lg leading-relaxed">
+                        <p class="mb-6">
+                            Founded in 2022, Techno Hands brings over <span class="font-semibold text-teal-600">20 YEARS OF INDUSTRY EXPERIENCE</span>
+                            to the forefront of manufacturing. We specialize in precision components crafted through
+                            state-of-the-art <span class="font-semibold text-teal-600">CNC TURNING MACHINES</span> and <span class="font-semibold text-teal-600">VERTICAL MACHINING CENTERS</span>,
+                            priding ourselves on delivering high-quality products tailored to meet the unique needs of our customers.
+                        </p>
+                        <p class="mb-6">
+                            At Techno Hands, innovation and precision are at the heart of everything we do. Our expert team is dedicated
+                            to leveraging advanced technology and techniques to ensure that each component meets the highest standards of excellence.
+                        </p>
+                        <p class="text-lg md:hidden max-w-3xl mx-auto mb-10">
+                            <p class="text-teal-700 font-extrabold">Specialized in :</p> <b>Sector of Defence Services, Heavy Engineering Machinery Works, Cement Plant & Spare Parts.</b>
+                        </p><br>
+                        <p class="font-semibold text-gray-700">Join us in shaping the future of manufacturing!</p>
+                        <p class="mt-4">Feel free to reach out for collaborations or inquiries!</p>
+                    </div>
+                    <img src="https://www.precisiontools.co.in/images/factory/1st.png" class="h-[20rem] w-[20rem] mx-auto">
+                </div><br>
+                <div class="w-max  text-white font-extrabold p-0.5">
+                    <a href="form.html" target="_blank"><button class="w-full bg-teal-500 hover:bg-teal-600 text-white font-semibold py-2 px-0.5 mx-3 rounded transition">
+                        Request Callback
+                    </button>
+                </div></a>
+            </div>
+        </section>
+
+        <!-- Why Choose Us Section -->
+        <section id="why-us" class="section fade-in py-16 px-4 bg-amber-50 text-white">
+            <div class="container mx-auto">
+                <h2 class="text-2xl md:text-4xl font-bold text-center mb-12 text-black">Why Choose Us?</h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Card 1 -->
+                    <div class="bg-gray-800 p-8 rounded-lg shadow-xl hover:shadow-2xl transition duration-300 transform hover:-translate-y-2">
+                        <h3 class="text-xl md:text-2xl font-semibold mb-4 text-teal-300">Expertise in Precision Manufacturing</h3>
+                        <p class="text-gray-300">Our experienced team studies client-provided drawings and generates efficient machining programs using SOLIDWORKS and AutoCAD, ensuring accuracy, speed, and high-quality component production.</p>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="bg-gray-800 p-8 rounded-lg shadow-xl hover:shadow-2xl transition duration-300 transform hover:-translate-y-2">
+                        <h3 class="text-2xl font-semibold mb-4 text-teal-300">Advanced Manufacturing</h3>
+                        <p class="text-gray-300">We utilize cutting-edge CNC and VMC equipment for high-precision, reliable results, ensuring superior product quality.</p>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="bg-gray-800 p-8 rounded-lg shadow-xl hover:shadow-2xl transition duration-300 transform hover:-translate-y-2">
+                        <h3 class="text-2xl font-semibold mb-4 text-teal-300">Commitment to Quality</h3>
+                        <p class="text-gray-300">Every component is crafted to meet the highest standards of excellence, guaranteeing durability and performance.</p>
+                    </div>
+                    <!-- Card 4 -->
+                    <div class="bg-gray-800 p-8 rounded-lg shadow-xl hover:shadow-2xl transition duration-300 transform hover:-translate-y-2">
+                        <h3 class="text-2xl font-semibold mb-4 text-teal-300">Global Reach</h3>
+                        <p class="text-gray-300">We provide services worldwide, supporting diverse industries across the globe with our precision engineering solutions.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section (Workshop Overview) -->
+        <section id="services" class="section fade-in py-16 px-4 bg-gray-50">
+            <div class="container mx-auto">
+                <h2 class="text-2xl md:text-3xl font-bold text-center mb-12 text-gray-900">Services & Workshop Capabilities</h2>
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div class="rounded-lg shadow-xl overflow-hidden">
+                        <img src="https://media.istockphoto.com/id/580108428/photo/metalworking-industry-cutting-tool-making-worm-shaft-at-metal-working.jpg?s=612x612&w=0&k=20&c=zcyhqgg_aT8zTCHFuc0uk3TQQ9YjiAYDqyKFTh5w14I=" alt="CNC Lathe Machine" class="w-lg h-auto object-cover">
+                    </div>
+                    <div class="mx-auto">
+                        <h3 class="text-xl md:text-2xl font-semibold mb-4 text-gray-800">CNC (Computer Numerical Control) Lathe Machines</h3>
+                        <ul class="list-disc list-inside text-sm md:text-lg leading-relaxed text-gray-700 space-y-3">
+                            <li>Automated, high-precision tasks for automotive, aerospace, manufacturing, and metalworking industries.</li>
+                            <li>Built to withstand heavy-duty operations and continuous use in industrial settings.</li>
+                            <li>Ensures high repeatability and surface finish quality for complex parts.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="grid md:grid-cols-2 gap-12 items-center mt-16">
+                    <div class="mx-auto">
+                        <h3 class="text-xl md:text-2xl font-semibold mb-4 text-gray-800">Vertical Machining Centers (VMCs)</h3>
+                        <ul class="list-disc list-inside text-sm md:text-lg leading-relaxed text-gray-700 space-y-3">
+                            <li>Designed for precision milling, drilling, and boring operations.</li>
+                            <li>Available in 3-axis, 4-axis, and 5-axis configurations to accommodate complex geometries.</li>
+                            <li>Widely used in the aerospace, automotive, and tool & die industries for their versatility and accuracy.</li>
+                            <li>High rigidity and stability for heavy-duty industrial use.</li>
+                        </ul>
+                    </div>
+                    <div class="rounded-lg  overflow-hidden">
+                        <img src="img/vmc.jpg"alt="Vertical Machining Center" class="w-[30rem] h-auto object-cover">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Products & Projects Section -->
+        <section id="products" class="section fade-in py-16 px-4 bg-gray-800 text-white">
+            <div class="container mx-auto ">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-teal-400">Products & Projects</h2>
+
+                <div class="mb-16 ">
+                    <h3 class="text-2xl md:text-3xl font-semibold mb-6 text-teal-300">Our Products</h3>
+                    <div class="overflow-x-auto">
+                        <table class="min-w-full bg-gray-700 rounded-lg shadow-lg text-sm md:text-xl">
+                            <thead>
+                                <tr class="bg-gray-600 text-left text-lg">
+                                    <th class="py-3 px-6 rounded-tl-lg">Product Type</th>
+                                    <th class="py-3 px-6 rounded-tr-lg">Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="border-b border-gray-600">
+                                    <td class="py-4 px-6">Shafts, Rolls & Mill Spares</td>
+                                    <td class="py-4 px-6">For all kinds of mills and industrial needs</td>
+                                </tr>
+                                <tr class="border-b border-gray-600">
+                                    <td class="py-4 px-6">Custom Spares</td>
+                                    <td class="py-4 px-6">Manufactured as per client drawings</td>
+                                </tr>
+                                <tr class="border-b border-gray-600">
+                                    <td class="py-4 px-6">Precision Cut Parts</td>
+                                    <td class="py-4 px-6">Tailored to exact specifications</td>
+                                </tr>
+                                <tr>
+                                    <td class="py-4 px-6">Measuring Instruments</td>
+                                    <td class="py-4 px-6">
+                                        <ul>
+                                            <li>MICROMETERS FROM 0.001MM TO 600MM SIZES</li>
+                                            <li>VERNIER CALLIPERS FROM 0.001 MM TO 1800MM SIZES</li>
+                                            <li>INSIDE MICROMETER FROM 0 - 600MM SIZES</li>
+                                            <li>BORE GAUGES</li>
+                                            <li>PRECISION DEGREE PROTECTOR</li>
+                                            <li>HARDNESS TESTING MACHINES</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div>
+                        <h1 class="text-lg md:text-2xl">Industries Benefiting Most from Techno Hands&#39; CNC Machining Expertise</h1><br />
+                        <div class="overflow-x-auto p-4">
+                                <table class="min-w-full table-auto border border-gray-300 text-left text-sm md:text-lg">
+                                    <thead class="bg-gray-100 text-gray-700">
+                                        <tr>
+                                            <th class="px-4 py-2 border border-gray-300">Industry</th>
+                                            <th class="px-4 py-2 border border-gray-300">Key Benefits from <span class="text-red-600">Techno Hand's</span> CNC Machining</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="text-white">
+                                        <tr>
+                                            <td class="px-4 py-2 border border-gray-300">Defence & Military</td>
+                                            <td class="px-4 py-2 border border-gray-300">Precision, durability, rapid prototyping</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="px-4 py-2 border border-gray-300">Heavy Engineering Machinery</td>
+                                            <td class="px-4 py-2 border border-gray-300">Robustness, efficiency, consistency</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="px-4 py-2 border border-gray-300">Cement Plant & Spares</td>
+                                            <td class="px-4 py-2 border border-gray-300">Customization, reliability, reduced downtime</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="px-4 py-2 border border-gray-300">Automotive</td>
+                                            <td class="px-4 py-2 border border-gray-300">High-precision parts, rapid innovation</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="px-4 py-2 border border-gray-300">Aerospace</td>
+                                            <td class="px-4 py-2 border border-gray-300">Complex geometries, material versatility</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="px-4 py-2 border border-gray-300">Renewable Energy</td>
+                                            <td class="px-4 py-2 border border-gray-300">Efficient turbine components, reliability</td>
+                                        </tr>
+                                        <tr >
+                                            <td class="px-4 py-2 border border-gray-300">Medical Devices</td>
+                                            <td class="px-4 py-2 border border-gray-300">Precision, regulatory compliance</td>
+                                        </tr>
+                                        <tr >
+                                            <td class="px-4 py-2 border border-gray-300">Electronics</td>
+                                            <td class="px-4 py-2 border border-gray-300">Miniaturization, high accuracy</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="px-4 py-2 border border-gray-300">Construction Equipment</td>
+                                            <td class="px-4 py-2 border border-gray-300">Efficiency, quality, scalability</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            
+                </div><br>
+
+                <div> 
+                    <h3 class="text-2xl md:text-3xl font-semibold mb-6 text-teal-300">Notable Projects</h3>
+                    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <!-- Project Card 1 -->
+                        <div class="bg-gray-700 p-6 rounded-lg shadow-xl hover:shadow-2xl transition duration-300 transform hover:-translate-y-2">
+                            <img src="https://lirp.cdn-website.com/md/pexels/dms3rep/multi/opt/hangar-jet-aircraft-fighter-72593-1920w.jpeg" alt="Defence Sector Parts" class="w-full h-48 object-cover rounded-md mb-4">
+                            <h4 class="text-xl font-semibold mb-2 text-teal-200">Private & Defence Sector Precision Parts</h4>
+                            <p class="text-gray-300">Tiny, high-standard precision parts for critical applications, meeting stringent defence requirements.</p>
+                        </div>
+                        <!-- Project Card 2 -->
+                        <div class="bg-gray-700 p-6 rounded-lg shadow-xl hover:shadow-2xl transition duration-300 transform hover:-translate-y-2">
+                            <img src="img/precisionCompo.jpg" alt="Wind Turbine Parts" class="w-full h-48 object-cover rounded-md mb-4">
+                            <h4 class="text-xl font-semibold mb-2 text-teal-200">Precision Components. Global Industries.</h4>
+                            <p class="text-gray-300">Trusted by OEMs in energy, mobility, and heavy equipment for performance that lasts.</p>
+                        </div>
+                        <!-- Project Card 3 -->
+                        <div class="bg-gray-700 p-6 rounded-lg shadow-xl hover:shadow-2xl transition duration-300 transform hover:-translate-y-2">
+                            <img src="img/parts.png" alt="Industrial Machine Parts" class="w-full h-48 object-cover rounded-md mb-4">
+                            <h4 class="text-xl font-semibold mb-2 text-teal-200">Industry-Level Machine Parts</h4>
+                            <p class="text-gray-300">Bearings and other parts designed to reduce friction and support movement in various industrial machines.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- New: Precision Manufacturing Insights Section -->
+                <div class="section fade-in mt-20 p-8 bg-gray-700 rounded-lg shadow-xl">
+                    <h3 class="text-xl md:text-3xl font-bold text-center mb-8 text-teal-400">Precision Manufacturing Insights ✨</h3>
+                    <p class="text-lg text-gray-300 text-center mb-6">
+                        Enter an industry below to get insights into how precision manufacturing impacts it.
+                    </p>
+                    <div class="flex flex-col md:flex-row gap-4 items-center justify-center mb-6">
+                        <input type="text" id="industry-input" placeholder="e.g., Aerospace, Medical Devices, Automotive"
+                               class="flex-grow p-3 rounded-md bg-gray-600 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-teal-500">
+                        <button id="generate-insights-button"
+                                class="bg-teal-500 hover:bg-teal-600 text-white font-bold py-3 px-6 rounded-md shadow-lg transition duration-300 transform hover:scale-105 flex items-center justify-center">
+                            Generate Insights
+                            <span id="loading-spinner" class="spinner ml-3 hidden"></span>
+                        </button>
+                    </div>
+                    <div id="insights-output" class="bg-gray-600 p-6 rounded-md text-gray-200 leading-relaxed min-h-[150px] flex items-center justify-center text-center">
+                        Your insights will appear here. Try "Aerospace" or "Medical Devices"!
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Clients Section -->
+        <section id="clients" class="section fade-in py-16 px-4 bg-gray-100">
+            <div class="container mx-auto">
+                <h2 class="text-xl md:text-3xl font-bold text-center mb-12 text-gray-900">Our Valued Clients</h2>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+                    <!-- Client Card 1 -->
+                    <div class="bg-white p-6 rounded-lg shadow-md flex flex-col items-center justify-center text-center hover:shadow-lg transition duration-300">
+                        <p class="text-xl font-semibold text-gray-800">Signet Arms</p>
+                    </div>
+                    <!-- Client Card 2 -->
+                    <div class="bg-white p-6 rounded-lg shadow-md flex flex-col items-center justify-center text-center hover:shadow-lg transition duration-300">
+                        
+                        <p class="text-xl font-semibold text-gray-800">Rajput Gun Service</p>
+                    </div>
+                    <!-- Client Card 3 -->
+                    <div class="bg-white p-6 rounded-lg shadow-md flex flex-col items-center justify-center text-center hover:shadow-lg transition duration-300">
+                       
+                        <p class="text-xl font-semibold text-gray-800">Jaypee Cements</p>
+                    </div>
+                    <!-- Client Card 4 -->
+                    <div class="bg-white p-6 rounded-lg shadow-md flex flex-col items-center justify-center text-center hover:shadow-lg transition duration-300">
+                        
+                        <p class="text-xl font-semibold text-gray-800">Sachin Engineering Works</p>
+                    </div>
+                    <!-- Client Card 5 -->
+                    <div class="bg-white p-6 rounded-lg shadow-md flex flex-col items-center justify-center text-center hover:shadow-lg transition duration-300">
+                       
+                        <p class="text-xl font-semibold text-gray-800">Sachin Engineering and Precision Works</p>
+                    </div>
+                    <!-- Client Card 6 -->
+                    <div class="bg-white p-6 rounded-lg shadow-md flex flex-col items-center justify-center text-center hover:shadow-lg transition duration-300">
+                       
+                        <p class="text-xl font-semibold text-gray-800">Ordinance Sector</p>
+                    </div>
+                    <!-- Client Card 7 -->
+                    <div class="bg-white p-6 rounded-lg shadow-md flex flex-col items-center justify-center text-center hover:shadow-lg transition duration-300">
+                        
+                        <p class="text-xl font-semibold text-gray-800">Webber India</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Us Section -->
+        <section id="contact" class="section fade-in py-16 px-4 bg-gray-900 text-white">
+            <div class="container mx-auto text-center">
+                <h2 class="text-4xl font-bold mb-8 text-teal-400">Contact Us</h2>
+                <p class="text-lg mb-8 max-w-2xl mx-auto">
+                    Ready to collaborate or have an inquiry? Reach out to Techno Hands and experience the perfection in manufacturing.
+                </p>
+                <div class="flex flex-col md:flex-row justify-center items-center gap-2 mb-12">
+                    <div class="flex items-center space-x-3">
+                        <svg class="w-8 h-8 text-teal-400" fill="none" stroke="currentColor" viewBox="0 0 10 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                        <a href="tel:+919907022222"> <span class="text-sm md:text-xl font-semibold">+91 99070 22222</span></a>
+                    </div>
+                    <a href="tel:+919425173400"> <span class="text-sm md:text-xl font-semibold ">+91 94251 73400</span></a>
+                    <div class="flex items-center space-x-3">
+                        <svg class="w-8 h-8 text-teal-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8m-2 4v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4m0-4l9-6 9 6"></path></svg>
+                        <a href="mailto:th@technohands.in"><span class="text-sm md:text-xl font-semibold">th@technohands.in</span></a>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                        <svg class="w-8 h-8 text-teal-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                        <span class="text-xl font-semibold">Satna, Madhya Pradesh, India</span>
+                    </div>
+                    
+                </div>
+                <div class="py-3 bg-teal-400 w-max rounded-full text-white font-extrabold p-0.5 mx-auto">
+                    <a href="form.html" target="_blank"><button class="p-1 px-10">
+                        Request Callback
+                    </button>
+                </div></a>
+                <p class="text-lg font-light text-gray-400">We Provide Worldwide Services</p>
+            </div>
+            <div>
+                <img src="img/certified.png" class="h-40 w-40 mx-auto">
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white px-4 text-center">
+        <div class="container mx-auto">
+            <p>Powered By <a href="https://chinmay3012.github.io/Portfolio/" class="text-red-500 font-bold" target="_blank">Chinmay Mehrotra</a></p>
+            <p>&copy; 2025 Techno Hands. All rights reserved.</p>
+            <p class=" text-sm text-gray-400">"The Perfection In Right Hands"</p>
+           
+        </div>
+    </footer>
+
+    <!-- Link to external JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>

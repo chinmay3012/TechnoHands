@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Get Quote</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen flex items-center justify-center bg-gray-100 p-4">
+
+  <form class="w-full max-w-md bg-white border-2 border-teal-500 rounded-lg shadow-lg p-6 space-y-4" method="POST" action="https://formspree.io/f/xldlgnob">
+    <h1 class="text-xl font-bold text-center mb-2">Call Back Request</h1>
+
+    <!-- Name -->
+    <input
+      type="text"
+      name="name"
+      placeholder="Name"
+      class="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-teal-500"
+      required
+    />
+
+    <!-- Phone -->
+    <input
+      type="number"
+      name="phone"
+      placeholder="Phone"
+      class="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-teal-500"
+      required
+    />
+
+    <!-- Email -->
+    <input
+      type="email"
+      name="email"
+      placeholder="Email"
+      class="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-teal-500"
+      required
+    />
+
+    <!-- Message -->
+    <textarea
+      name="message"
+      placeholder="Message"
+      rows="4"
+      class="w-full p-3 border border-gray-300 rounded resize-none focus:outline-none focus:ring-2 focus:ring-teal-500"
+      required
+    ></textarea>
+
+    <!-- Submit button -->
+    <button
+      type="submit"
+      class="w-full bg-teal-500 hover:bg-teal-600 text-white font-semibold py-2 rounded transition"
+    >
+      Submit
+    </button>
+  </form>
+
+</body>
+</html>
